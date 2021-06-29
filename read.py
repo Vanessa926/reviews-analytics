@@ -23,3 +23,16 @@ for d in data:
 print('一共有',len(new),'筆留言長度小於100')
 print(new[0])
 print(new[1])
+
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+# list comprehension(清單快寫法)
+# 以上四行可以用以下一行來代替
+# good = [d for d in data if 'good' in d]
+# or
+# bad = ['bad' in d for d in data]
+print('一共有',len(good),'筆留言有提到good')
+print(good[0])
